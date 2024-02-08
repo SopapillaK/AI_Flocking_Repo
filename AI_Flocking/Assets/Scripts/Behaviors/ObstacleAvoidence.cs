@@ -27,7 +27,8 @@ public class ObstacleAvoidence : Seek
             Debug.DrawRay(character.transform.position, character.linearVelocity.normalized * lookahead, Color.green, 0.5f);
             Debug.Log("safe");
             // nothing to avoid
-            return base.getTargetPosition();
+            //return base.getTargetPosition();
+            return Vector3.positiveInfinity;
         }
     }
 
