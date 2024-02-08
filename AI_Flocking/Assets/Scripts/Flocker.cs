@@ -50,7 +50,7 @@ public class Flocker : Kinematic
         mySteering.behaviors[2].weight = 1f;
 
         // set up prioritysteering
-        ObstacleAvoidance myAvoid = new ObstacleAvoidance();
+        ObstacleAvoidence myAvoid = new ObstacleAvoidence();
         myAvoid.character = this;
         myAvoid.target = myCohereTarget;
         myAvoid.flee = true; // otherwise I seek to the obstacle
